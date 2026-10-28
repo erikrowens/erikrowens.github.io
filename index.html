@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Erik Owens · Accenteo</title>
+<meta name="description" content="Erik Owens — Accenteo. Data & AI consulting.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:Inter;font-weight:400;font-display:swap;src:url(assets/fonts/inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:500;font-display:swap;src:url(assets/fonts/inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:600;font-display:swap;src:url(assets/fonts/inter-latin-600-normal.woff2) format("woff2")}
+
+:root{
+  --navy:#0F2137;
+  --teal:#00CFA6;
+  --white:#FFFFFF;
+  --subline:#C2D4E6;
+  --secondary:#A6BAD1;
+  --muted:#8299B5;
+  --rule:rgba(166,186,209,.18);
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{
+  min-height:100vh;
+  display:flex;flex-direction:column;
+  color:var(--white);
+  font:400 17px/1.6 Inter,system-ui,sans-serif;
+  background:
+    radial-gradient(60% 70% at 72% 18%, rgba(30,134,216,.20), transparent 70%),
+    radial-gradient(40% 50% at 95% 100%, rgba(0,207,166,.08), transparent 70%),
+    var(--navy);
+}
+main{flex:1;width:100%;max-width:880px;margin:0 auto;padding:12vh 24px 64px}
+
+.lockup{display:flex;align-items:center;gap:22px}
+.lockup img{height:84px;width:auto}
+.wordmark{font-weight:600;font-size:34px;letter-spacing:.17em;line-height:1}
+.subline{
+  margin-top:12px;padding-top:12px;
+  border-top:1px solid var(--teal);
+  font-weight:500;font-size:13px;letter-spacing:.30em;color:var(--subline);
+}
+
+h1{margin:72px 0 8px;font-weight:600;font-size:clamp(32px,5vw,44px);letter-spacing:-.015em;line-height:1.15}
+.lede{margin:0;max-width:56ch;color:var(--secondary);font-size:19px}
+
+.label{
+  margin:64px 0 18px;
+  font-weight:500;font-size:12px;letter-spacing:.30em;text-transform:uppercase;color:var(--muted);
+}
+.creds{display:flex;flex-wrap:wrap;gap:24px 56px}
+.cred{border-left:1px solid var(--rule);padding-left:22px}
+.cred b{display:block;font-weight:600;font-size:30px;letter-spacing:-.01em}
+.cred span{display:block;color:var(--subline);font-size:15px}
+.cred small{display:block;margin-top:2px;color:var(--muted);font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+
+.links{margin-top:64px;display:flex;flex-wrap:wrap;gap:12px}
+.links a{
+  display:inline-block;padding:11px 20px;border-radius:6px;
+  color:var(--navy);background:var(--teal);
+  font-weight:600;font-size:15px;text-decoration:none;
+}
+.links a.ghost{color:var(--white);background:transparent;border:1px solid var(--rule)}
+.links a:hover{filter:brightness(1.08)}
+.links a.ghost:hover{border-color:var(--teal)}
+.links a:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+
+footer{max-width:880px;width:100%;margin:0 auto;padding:24px;color:var(--muted);font-size:13px;border-top:1px solid var(--rule)}
+
+@media (max-width:520px){
+  main{padding-top:56px}
+  .lockup{gap:16px}
+  .lockup img{height:64px}
+  .wordmark{font-size:26px}
+  .subline{font-size:11px}
+  h1{margin-top:56px}
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="lockup">
+    <img src="assets/mark.svg" alt="">
+    <div>
+      <div class="wordmark">ACCENTEO</div>
+      <div class="subline">DATA &amp; AI</div>
+    </div>
+  </div>
+
+  <h1>Erik Owens</h1>
+  <p class="lede">Data and AI consulting: from the promise to production.</p>
+
+  <p class="label">Certified on both sides of the question</p>
+  <div class="creds">
+    <div class="cred"><b>CDMP</b><span>Data management</span><small>DAMA International</small></div>
+    <div class="cred"><b>CIPP/E</b><span>Data protection</span><small>IAPP</small></div>
+  </div>
+
+  <div class="links">
+    <a href="https://www.linkedin.com/in/erikrowens/">LinkedIn</a>
+  </div>
+</main>
+<footer>© 2026 Erik Owens · Accenteo</footer>
+</body>
+</html>
